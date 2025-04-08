@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>弦韻交響 - 線上節目冊</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/turn.min.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+        <div class="page"><img src="images/page1.jpg"/></div>
+        <div class="page"><img src="images/page2.jpg"/></div>
+        <div class="page"><img src="images/page3.jpg"/></div>
+        <div class="page"><img src="images/page4.jpg"/></div>
+        <div class="page"><img src="images/page5.jpg"/></div>
+        <div class="page"><img src="images/page6.jpg"/></div>
+        <div class="page"><img src="images/page7.jpg"/></div>
+        <div class="page"><img src="images/page8.jpg"/></div>
+        <div class="page"><img src="images/page9.jpg"/></div>
+        <div class="page"><img src="images/page10.jpg"/></div>
+        <div class="page"><img src="images/page11.jpg"/></div>
+        <div class="page"><img src="images/page12.jpg"/></div>
+  </div>
+  <script>
+    $('#flipbook').turn({
+        width: document.getElementById('flipbook').clientWidth,
+        height: document.getElementById('flipbook').clientHeight,
+        autoCenter: true,
+        acceleration: true,
+        gradients: true,
+        elevation: 50
+    });
+  </script>
+</body>
+</html>
